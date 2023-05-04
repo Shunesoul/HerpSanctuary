@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: darkgreen;  
+    border: solid rgba(0, 0, 0, 0.245) 2px;  
+}
+.leftSide {
+    display: flex;
+    align-items: center;
+}
+.leftSide img {
+    max-height: 8rem;
+    width: auto;
+    border-radius: 50%;
+    padding: 1rem;    
+}
+.leftSide h1 {
+    font-size: 4rem;
+}
+.rightSide {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 2rem;
+}
+.rightSide a {
+    font-size: larger;
+    color: black;
+    text-decoration: none;
+    border: solid 2px;
+    border-radius: 4px;
+    padding: 2px;
+}
+.middleSections {
+    padding-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    gap: 3rem;
+}
+.contentSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid rgba(0, 0, 0, 0.432) 2px;
+    border-radius: 1rem;
+    gap: 2rem;
+}
+.leftSection {
+    height: auto;
+    width: 50%;
+    
+}
+.rightSection {
+    height: auto;
+    width: 50%;
+    text-align: center;
+}
+.lineBreak {
+    border-top: solid 3px rgba(0, 0, 0, 0.575);   
+}
+.testimonialGrid {
+    display: grid;
+    justify-content: center;
+    grid-gap: 2rem;
+    grid-template-areas: 
+    "one two three four five"
+    "six seven eight nine ten"
+    
+}
+.object1 {
+    grid-area: three;
+    text-align: center;
+    border-bottom: solid black 1px;
+}
+.object2 {
+    grid-area: seven;
+}
+.object3 {
+    grid-area: eight;
+}
+.object4 {
+    grid-area: nine;
+}
+.signUp {
+    display: flex;
+    justify-content: center;
+}
+.signUp button {
+    justify-self: center;
+    padding: 2rem;
+    border-radius: 50px;
+    background-color: darkgreen;
+    border: solid rgba(0, 0, 0, 0.264);
+    cursor: pointer;
+}
+.profileSections{
+    display: flex;
+    flex-direction: column;
+}
+.topPart{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.topPart img {
+    height: auto;
+    max-width: 4rem;
+    border-radius: 100%;
+}
