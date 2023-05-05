@@ -98,11 +98,13 @@
 }
 .signUp button {
     justify-self: center;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 50px;
     background-color: darkgreen;
     border: solid rgba(0, 0, 0, 0.264);
     cursor: pointer;
+    font-size: 20px;
+    color: white;
 }
 .profileSections{
     display: flex;
