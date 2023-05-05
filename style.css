@@ -51,20 +51,22 @@
 }
 .contentSection {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     border: solid rgba(0, 0, 0, 0.432) 2px;
-    border-radius: 1rem;
-    gap: 2rem;
+    border-radius:1rem;
 }
 .leftSection {
-    height: auto;
-    width: 50%;
     
 }
-.rightSection {
+.leftSection img {
     height: auto;
-    width: 50%;
+    max-width: 30rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.rightSection {
+    
     text-align: center;
 }
 .lineBreak {
@@ -118,4 +120,62 @@
     height: auto;
     max-width: 4rem;
     border-radius: 100%;
+}
+.footer {
+    background-color: rgba(128, 128, 128, 0.46);
+    margin-top: 4rem;
+}
+.grid{
+    display: grid;
+    padding-top: 4rem;
+    padding-left: 2rem;
+    grid-template-areas: 
+    "one two three four"
+    "five six seven eight"
+    "nine ten eleven twelve"
+    "thirteen fourteen fifteen sixteen";
+}
+.footerObject1{
+    grid-area: one;
+}
+.footerObject2{
+    grid-area: five;
+}
+.footerObject3{
+    grid-area: nine;
+}
+.footerObject4{
+    grid-area: three;
+    cursor: pointer;
+}
+.footerObject5{
+    grid-area: seven;
+    cursor: pointer;
+}
+.footerObject6{
+    grid-area: eleven;
+    cursor: pointer;
+}
+.footerObject7{
+    grid-area: sixteen;
+}
+@media (max-width: 1400px) {
+    .contentSection {
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .leftSection {
+        justify-content: center;
+    }
+    .leftSection img {
+        justify-self: center;
+        height: auto;
+        max-width: 22rem;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+    .leftSide img {
+        height: 7rem;
+    }
 }
