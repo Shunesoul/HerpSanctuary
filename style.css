@@ -41,6 +41,15 @@
     border-radius: 4px;
     padding: 2px;
 }
+.rightSide button {
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+}
+.rightSide img {
+    height: auto;
+    max-width: 2rem;
+    cursor: pointer;
+}
 .middleSections {
     padding-top: 15rem;
     display: flex;
@@ -63,7 +72,6 @@
     border-bottom-left-radius: 1rem;
 }
 .rightSection {
-    
     text-align: center;
 }
 .lineBreak {
@@ -178,3 +186,32 @@
         height: 7rem;
     }
 }
+.bigContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    
+}
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid rgba(0, 128, 0, 0.534) 3px;
+    border-radius: 1rem;
+    padding: 5%;
+    background-color: rgba(36, 34, 34, 0.388);
+}
+.loginStuff {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+@media (max-width: 600px) {
+    .loginStuff {
+        flex-direction: column;
+    }
+}
+
+
