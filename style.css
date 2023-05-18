@@ -191,7 +191,6 @@
     justify-content: center;
     align-items: center;
     padding-top: 10%;
-    
 }
 .mainContainer {
     display: flex;
@@ -207,11 +206,46 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 1rem
+    ;
 }
 @media (max-width: 600px) {
     .loginStuff {
         flex-direction: column;
     }
 }
-
+.leftLogin {
+    display: flex;
+    flex-direction: column;border: solid black 2px;
+    padding: 8px;
+    border-radius: 1rem;
+}
+.rightLogin {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    border: solid 2px black;
+    border-radius: 1rem;
+}
+.leftLogin input {
+    border-radius: 1rem;
+    border: solid black 1px;        
+    padding: 2px;
+}
+.leftLogin button {
+    border-radius: 1rem;
+    border: solid black 1px;
+    padding: 2px;
+}
+.rightLogin input {
+    border-radius: 1rem;
+    border: solid black 1px;
+    padding: 2px;
+    margin-bottom: 2px;
+}
+.rightLogin button {
+    border-radius: 1rem;
+    border: solid black 1px;
+    padding: 2px;
+}
 
